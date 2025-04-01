@@ -1,6 +1,10 @@
+"""
+Author:
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+
 
 def distance(point1, point2):
     return np.sqrt(np.sum((point1 - point2)**2))
@@ -72,5 +76,5 @@ def ant_colony_optimization(points, n_ants, n_iterations, alpha, beta, evaporati
     plt.show()
     
 # Example usage:
-points = np.random.rand(10, 3) # Generate 10 random 3D points
+points = np.random.rand(10, 2) # Generate 10 random 3D points
 ant_colony_optimization(points, n_ants=10, n_iterations=100, alpha=1, beta=1, evaporation_rate=0.5, Q=1)
