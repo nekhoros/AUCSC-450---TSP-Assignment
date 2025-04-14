@@ -13,7 +13,7 @@ using namespace std;
 
 // Algorithm parameters
 constexpr int N_ANTS = 8;           // Number of ants
-constexpr int N_ITER = 10000;       // Number of iterations
+constexpr int N_ITER = 1000;       // Number of iterations
 constexpr int ALPHA = 1;            // Pheromone importance
 constexpr int BETA = 1;             // Distance importance
 constexpr double EVAP_RATE = 0.5;   // Pheromone evaporation rate
