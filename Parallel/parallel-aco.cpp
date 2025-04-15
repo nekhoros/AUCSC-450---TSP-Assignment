@@ -13,7 +13,7 @@
 using namespace std;
 
 // Algorithm parameters
-constexpr int N_ANTS = 4; //Number of ants
+constexpr int N_ANTS = 8; //Number of ants
 constexpr int N_ITER = 1000; //Number of iterations in finding the best path
 constexpr int ALPHA = 1; // the relative importance of the trail
 constexpr int BETA = 1; // the relative importance of the visibility
@@ -120,7 +120,7 @@ int main() {
     }
 
     //set the threads for experimentation
-    omp_set_num_threads(16);
+    omp_set_num_threads(N_ANTS);
     //start the timer
     auto start = chrono::high_resolution_clock::now();
 
