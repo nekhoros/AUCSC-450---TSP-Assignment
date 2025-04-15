@@ -95,9 +95,9 @@ int selectNextCity(int current, vector<int>& visited, vector<double>& pheromone,
 int main() {
     // Load coordinates
     vector<pair<int, int>> coordinates;
-    ifstream infile("C:/Users/nekho/Downloads/AUCSC 450 - TSP Assignment/Data/BerlinCities.txt");
+    ifstream infile("C:/Users/nekho/Downloads/AUCSC 450 - TSP Assignment/Data/280Points");
     if (!infile) {
-        cerr << "Error opening file '../Data/BerlinCities.txt'" << endl;
+        cerr << "Error opening file '../Data/280Points.txt'" << endl;
         return 1;
     }
 
@@ -120,7 +120,7 @@ int main() {
     }
 
     //set the threads for experimentation
-    omp_set_num_threads(4);
+    omp_set_num_threads(16);
     //start the timer
     auto start = chrono::high_resolution_clock::now();
 
