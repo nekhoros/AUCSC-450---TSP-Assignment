@@ -13,8 +13,9 @@
 using namespace std;
 
 // Algorithm parameters
-constexpr int N_ANTS = 100; //Number of ants
+constexpr int N_ANTS = 30; //Number of ants
 constexpr int N_ITER = 1000; //Number of iterations in finding the best path
+constexpr int N_THREADS = 1; //Number of iterations in finding the best path
 constexpr int ALPHA = 1; // the relative importance of the trail
 constexpr int BETA = 1; // the relative importance of the visibility
 constexpr double EVAP_RATE = 0.5; // 1-p, p = trail persistance
@@ -95,9 +96,9 @@ int selectNextCity(int current, vector<int>& visited, vector<double>& pheromone,
 int main() {
     // Load coordinates
     vector<pair<int, int>> coordinates;
-    ifstream infile("../Data/BerlinCities.txt");
+    ifstream infile("C:/Users/nekho/Downloads/AUCSC 450 - TSP Assignment/Data/280Points.txt");
     if (!infile) {
-        cerr << "Error opening file '../Data/BerlinCities.txt'" << endl;
+        cerr << "Error opening file '../Data/280Points.txt'" << endl;
         return 1;
     }
 
@@ -120,7 +121,7 @@ int main() {
     }
 
     //set the threads for experimentation
-    omp_set_num_threads(8);
+    omp_set_num_threads(N_THREADS);
     //start the timer
     auto start = chrono::high_resolution_clock::now();
 
