@@ -1,0 +1,257 @@
+EXPERIMENTS
+
+Schedule: Dynamic
+Num threads: 1
+Type of parallelism: Data
+With/without barriers: with
+Recorded execution time (in seconds): 12.1168
+Best path length: 7704.08
+Dataset: Berlin cities
+
+Schedule: Dynamic
+Num threads: 2
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 6.71046
+Best path length: 7949.65
+Dataset: Berlin cities
+
+Schedule: Dynamic
+Num threads: 4
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 4.02135
+Best path length: 7777.32
+Dataset: Berlin cities
+
+Schedule: Dynamic
+Num threads: 8
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 4.38825
+Best path length: 7750.25
+Dataset: Berlin cities
+
+Schedule: Static
+Num threads: 1
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 12.2787
+Best path length: 7704.08
+Dataset: Berlin cities
+
+Schedule: Static
+Num threads: 2
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 6.55184
+Best path length: 8158.46
+Dataset: Berlin cities
+
+Schedule: Static
+Num threads: 4
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 4.0052
+Best path length: 7839.23
+Dataset: Berlin cities
+
+Schedule: Static
+Num threads: 8
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 4.4272
+Best path length: 7796.98
+Dataset: Berlin cities
+
+Schedule: Guided
+Num threads: 1
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 12.2159
+Best path length: 7704.08
+Dataset: Berlin cities
+
+Schedule: Guided
+Num threads: 2
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 6.79096
+Best path length: 7792.57
+Dataset: Berlin cities
+
+Schedule: Guided
+Num threads: 4
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 4.0011
+Best path length: 7550.19
+Dataset: Berlin cities
+
+Schedule: Guided
+Num threads: 8
+Type of parallelism: Data
+With/without barriers: With
+Recorded execution time (in seconds): 4.40504
+Best path length: 7686.02
+Dataset: Berlin cities
+
+Schedule: dynamic
+Num threads: 1
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 12.523
+Best path length: 7704.08
+Dataset: Berlin cities
+
+Schedule: dynamic
+Num threads: 2
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 6.55835
+Best path length: 8352.12
+Dataset: Berlin cities
+
+Schedule: dynamic
+Num threads: 4
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 3.76977
+Best path length: 7770.78
+Dataset: Berlin cities
+
+Schedule: dynamic
+Num threads: 8
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 4.13191
+Best path length: 7824.98
+Dataset: Berlin cities
+
+Schedule: static
+Num threads: 1
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 12.5742
+Best path length: 7704.08
+Dataset: Berlin cities
+
+Schedule: static
+Num threads: 2
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 6.73896
+Best path length: 7791.67
+Dataset: Berlin cities
+
+Schedule: static
+Num threads: 4
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 3.92559
+Best path length: 7681.75
+Dataset: Berlin cities
+
+Schedule: static
+Num threads: 8
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 3.95981
+Best path length: 7626.36
+Dataset: Berlin cities
+
+Schedule: guided
+Num threads: 1 
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 12.6254
+Best path length: 7704.08
+Dataset: Berlin cities
+
+Schedule: guided
+Num threads: 2
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 6.75382
+Best path length: 7858.15
+Dataset: Berlin cities
+
+Schedule: guided
+Num threads: 4
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 3.80343
+Best path length: 7775.15
+Dataset: Berlin cities
+
+Schedule: guided
+Num threads: 8
+Type of parallelism: Data
+With/without barriers: Without
+Recorded execution time (in seconds): 3.9166
+Best path length: 7629.26
+Dataset: Berlin cities
+
+Schedule:
+Num threads: 1
+Type of parallelism: Task
+With/without barriers: without
+Recorded execution time (in seconds): 28.0236
+Best path length: 7704.08
+Dataset: Berlin cities
+
+Schedule:
+Num threads: 2
+Type of parallelism: Task
+With/without barriers: without
+Recorded execution time (in seconds): 18.5346
+Best path length: 7995.85
+Dataset: Berlin cities
+
+Schedule:
+Num threads: 4
+Type of parallelism: Task
+With/without barriers: without
+Recorded execution time (in seconds): 16.2084
+Best path length: 7788.21
+Dataset: Berlin cities
+
+Schedule:
+Num threads: 8
+Type of parallelism: Task
+With/without barriers: without
+Recorded execution time (in seconds): 42.3642
+Best path length: 7629.26
+Dataset: Berlin cities
+
+Schedule:
+Num threads: 1
+Type of parallelism: Task
+With/without barriers: without
+Recorded execution time (in seconds): 28.2136
+Best path length: 7704.08
+Dataset: Berlin cities
+
+Schedule:
+Num threads: 2
+Type of parallelism: Task
+With/without barriers: without
+Recorded execution time (in seconds): 18.4365
+Best path length: 7846.5
+Dataset: Berlin cities
+
+Schedule:
+Num threads: 4
+Type of parallelism: Task
+With/without barriers: without
+Recorded execution time (in seconds): 15.4993
+Best path length: 7722.59
+Dataset: Berlin cities
+
+Schedule:
+Num threads: 8
+Type of parallelism: Task
+With/without barriers: without
+Recorded execution time (in seconds): 45.252
+Best path length: 7742.95
+Dataset: Berlin cities
