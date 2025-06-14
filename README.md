@@ -34,7 +34,7 @@ These examples demonstrate ACO’s versatility in solving diverse optimization p
 ### Parallelizable sections of ACO
 1. **Ant Path Construction (Main Parallel Section)**
     
-    ![main-section-nIter.png](Images\main-section-nIter.png)
+    ![main-section-nIter.png](Images/main-section-nIter.png)
     
     **What this does:**
     
