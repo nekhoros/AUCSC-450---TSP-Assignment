@@ -17,3 +17,33 @@ Ant Colony Optimization (ACO) is a population-based, probabilistic metaheuristic
 ### Literature and Prior Work
 
 The ACO paradigm was first introduced by Marco Dorigo and colleagues in the early 1990s. The foundational work titled "Ant System: Optimization by a Colony of Cooperating Agents" by Dorigo, Maniezzo, and Colorni (1996) formalized the Ant System algorithm and demonstrated its effectiveness on several combinatorial problems, including the TSP. Their approach used a probabilistic transition rule that combines pheromone intensity and heuristic visibility, along with global pheromone updating strategies. Since then, numerous variations of ACO have been developed, such as Ant Colony System (ACS), MAX–MIN Ant System (MMAS), and Elitist Ant System, each incorporating improvements in convergence speed, solution quality, or avoidance of stagnation. In parallel, researchers have explored hybridizing ACO with local search techniques (e.g., 2-opt) and applying it to large-scale industrial problems. In the context of parallelization, several studies have shown that ACO lends itself well to data-parallel implementations, particularly for tour construction, though shared memory contention remains a challenge during pheromone updates.
+
+### Applications of ACO
+Ant Colony Optimization has been successfully applied to a wide variety of real-world problems beyond the classical TSP. Some notable applications include:
+
+1. **Traveling Salesman Problem (TSP):** ACO remains one of the most widely studied metaheuristics for solving TSP due to its intuitive nature and performance.
+2. **Vehicle Routing Problem (VRP):** Logistics companies use ACO to optimize delivery schedules and routes, accounting for capacity and time constraints.
+3. **Network Routing:** In communication and computer networks, ACO is used for dynamic pathfinding, especially in mobile ad hoc networks.
+4. **Genome Sequencing:** In bioinformatics, ACO helps in gene sequencing and alignment tasks by optimizing orderings with high similarity scores.
+5. **Portfolio Optimization:** In finance, ACO can be used to optimize asset allocations that maximize returns under risk constraints.
+
+These examples demonstrate ACO’s versatility in solving diverse optimization problems where the solution space is large, discrete, and complex.
+
+## Parallelization Strategy
+
+### Parallelizable sections of ACO
+1. **Ant Path Construction (Main Parallel Section)**
+    
+    ![main-section-nIter.png](Images\main-section-nIter.png)
+    
+    **What this does:**
+    
+    Each ant independently builds its tour. This includes:
+    
+    - Choosing a random starting city
+    - Iteratively selecting the next city to visit using pheromone + distance info
+    - Calculating the full tour length
+    
+    **Why this is parallelizable:**
+    
+    Each ant's work is **independent** (no shared data except reading the pheromone matrix), so this is embarrassingly parallel.
